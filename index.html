@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animate</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -15,13 +20,13 @@
       <section id="home">
         <div id="nav">
           <div id="nLeft">
-            <a href="#">Home</a>
-            <a href="#">Pricing</a>
-            <a href="#">Products</a>
+            <a class="nLink" href="#">Home</a>
+            <a class="nLink" href="#">Pricing</a>
+            <a class="nLink" href="#">Products</a>
           </div>
-          <a id="nCenter" href="#">YoRu</a>
+          <a class="nLink" id="nCenter" href="#">YoRu</a>
           <div id="nRight">
-            <a href="#">Our Journey</a>
+            <a class="nLink" href="#">Our Journey</a>
           </div>
         </div>
         <div id="hero">
@@ -32,7 +37,7 @@
               Committed to sustainability, eco-friendly choices for a tomorrow.
             </p>
             <div id="susImageWrapper">
-              <img src="./images/pinkgreenplant.jpg" alt="" />
+              <img src="./images/pinkgreenplant.webp" alt="" />
             </div>
           </div>
           <div id="hCenter">
@@ -41,7 +46,7 @@
               <h1>Equilibrium.</h1>
             </div>
             <div id="image-text">
-              <img src="./images/pinkplant.jpg" alt="" />
+              <img src="./images/pinkplant.webp" alt="" />
               <p>
                 Committed to sustainability, eco-friendly choices for a better
                 tomorrow.
@@ -53,67 +58,89 @@
             <h3>Visit Our Gallery</h3>
           </div>
         </div>
-        <div id="motive">
-          <h3>Our Motive</h3>
-          <p>
-            My brand embodies innovation and quality, seamlessly blending modern
-            aesthetics with timeless functionality.
-            <span id="one"></span>Committed to excellence, we prioritize
-            sustainability and customer satisfaction. Our products are crafted
-            to inspire, <span id="two"></span> offering a unique blend of style
-            and <span id="three"></span>practicality that elevates everyday
-            experiences . Discover the difference with our brand.
-          </p>
-        </div>
-        <div id="pictures">
-          <div id="firstPic">
-            <div id="picImg">
-              <img src="./images/sea.jpg" alt="" />
-            </div>
-            <div id="firstData">
-              <h1>Synergy.</h1>
-              <p>
-                Committed to sustainability, eco-friendly choices for a better
-                tomorrow.
-              </p>
-            </div>
+      </section>
+      <div id="motive">
+        <h3>Our Motive</h3>
+        <p>
+          My brand embodies innovation and quality, seamlessly blending modern
+          aesthetics with timeless functionality.
+          <span id="one"></span>Committed to excellence, we prioritize
+          sustainability and customer satisfaction. Our products are crafted to
+          inspire, <span id="two"></span> offering a unique blend of style and
+          <span id="three"></span>practicality that elevates everyday
+          experiences . Discover the difference with our brand.
+        </p>
+      </div>
+      <div id="pictures">
+        <div id="firstPic">
+          <div id="picImg">
+            <img src="./images/sea.webp" alt="" />
           </div>
-          <div id="secondPic">
-            <div id="picImg">
-              <img src="./images/cloud.jpg" alt="" />
-            </div>
-            <div id="secData">
-              <h1>Harmony.</h1>
-              <p>
-                Committed to sustainability, eco-friendly choices for a better
-                tomorrow.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="banner">
-          <div id="bImg">
-            <img src="./images/bottle.jpg" alt="" />
-          </div>
-          <div id="bText">
-            <h1>
-              Biodegradable <br />
-              Packaging
-            </h1>
+          <div id="firstData">
+            <h1>Synergy.</h1>
             <p>
               Committed to sustainability, eco-friendly choices for a better
               tomorrow.
             </p>
           </div>
         </div>
-        <div id="future">
-          <video src="./back.mp4" loop muted autoplay></video>
-          <div id="ftext">
-            <h1>think of future.</h1>
-            <button>join the movement</button>
+        <div id="secondPic">
+          <div id="picImg">
+            <img src="./images/cloud.webp" alt="" />
+          </div>
+          <div id="secData">
+            <h1>Harmony.</h1>
+            <p>
+              Committed to sustainability, eco-friendly choices for a better
+              tomorrow.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+      <div id="banner">
+        <div id="bImg">
+          <img src="./images/bottle.jpg" alt="" />
+        </div>
+        <div id="bText">
+          <h1>
+            Biodegradable <br />
+            Packaging
+          </h1>
+          <p>
+            Committed to sustainability, eco-friendly choices for a better
+            tomorrow.
+          </p>
+        </div>
+      </div>
+      <div id="future">
+        <video src="./back.mp4" loop muted autoplay></video>
+        <div id="ftext">
+          <h1>think of future.</h1>
+          <button>join the movement</button>
+        </div>
+      </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

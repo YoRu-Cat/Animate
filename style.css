@@ -32,6 +32,7 @@ body {
   gap: 2vw;
 }
 #nav a {
+  display: inline-block;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -177,7 +178,7 @@ body {
 #one {
   width: 4vw;
   height: 2.4vw;
-  background-image: url(./images/bluegirl.jpg);
+  background-image: url(./images/bluegirl.webp);
   background-size: cover;
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
@@ -185,7 +186,7 @@ body {
 #three {
   width: 4vw;
   height: 2.4vw;
-  background-image: url(./images/grass.jpg);
+  background-image: url(./images/grass.webp);
   background-size: cover;
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
@@ -193,7 +194,7 @@ body {
 #two {
   width: 6vw;
   height: 3vw;
-  background-image: url(./images/shaljam.jpg);
+  background-image: url(./images/shaljam.webp);
   background-size: cover;
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
