@@ -146,6 +146,7 @@ body {
 }
 #motive {
   padding: 3vw 10vw;
+  margin-top: 3vw;
 }
 #motive h3 {
   font-weight: 100;
@@ -193,4 +194,66 @@ body {
   background-size: cover;
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
+}
+#pictures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+  padding: 3vw 12vw 3vw 14vw;
+}
+#firstPic {
+  width: 14vw;
+}
+#firstPic #picImg {
+  width: 100%;
+  margin-bottom: 1vw;
+  height: 24vw;
+  /* background-image: url(./images/sea.jpg);
+  background-size: cover;
+  background-position: center; */
+  /* background: red; */
+}
+#secondPic {
+  width: 21vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  /* background: rebeccapurple; */
+}
+#secondPic #picImg {
+  width: 100%;
+  margin-bottom: 1vw;
+  height: 36vw;
+}
+#picImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#firstPic h1 {
+  font-weight: 400;
+  margin-bottom: 3%;
+  letter-spacing: -0.1vw;
+  font-size: 1.6vw;
+}
+#firstPic p,
+#secondPic p {
+  opacity: 0.9;
+  letter-spacing: -0.03vw;
+  /* background: rebeccapurple; */
+}
+#firstData {
+  width: 80%;
+}
+#secondPic h1 {
+  font-weight: 400;
+  margin-bottom: 3%;
+  letter-spacing: -0.1vw;
+  font-size: 1.6vw;
+}
+#secData {
+  width: 70%;
+  /* background: red; */
 }
