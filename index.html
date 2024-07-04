@@ -30,7 +30,7 @@
           </div>
         </div>
         <div id="hero">
-          <div id="sustain">
+          <div id="sustain" class="anim2">
             <h5>01.</h5>
             <h2>Sustainability</h2>
             <p>
@@ -40,20 +40,20 @@
               <img src="./images/pinkgreenplant.webp" alt="" />
             </div>
           </div>
-          <div id="hCenter">
+          <div id="hCenter" class="anim2">
             <div id="headings">
               <h1>Ephemeral</h1>
               <h1>Equilibrium.</h1>
             </div>
-            <div id="image-text">
-              <img src="./images/pinkplant.webp" alt="" />
+            <div id="imageText">
+              <img id="hCenterImg" src="./images/pinkplant.webp" alt="" />
               <p>
                 Committed to sustainability, eco-friendly choices for a better
                 tomorrow.
               </p>
             </div>
           </div>
-          <div id="visit">
+          <div id="visit" class="anim2">
             <div id="circleV"><i class="ri-arrow-down-line"></i></div>
             <h3>Visit Our Gallery</h3>
           </div>
@@ -133,7 +133,15 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Three.js is needed for 3d Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.155.0/examples/jsm/"
+        }
+      }
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js"></script> -->
     <!-- ControlKit is needed for Debug Panel -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
@@ -141,6 +149,6 @@
       type="text/javascript"
       src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>

@@ -105,10 +105,7 @@ body {
   text-transform: capitalize;
   line-height: 1.2;
 }
-#image-text {
-  width: auto;
-  height: auto;
-}
+
 #hCenter #headings {
   position: absolute;
   top: -21%;
